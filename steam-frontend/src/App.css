@@ -1,0 +1,136 @@
+:root {
+  --steam-bg: #1b2838;        /* main page background */
+  --steam-header: #171a21;    /* darkest, top bar */
+  --steam-panel: #2a475e;     /* cards / panels */
+  --steam-blue: #66c0f4;      /* light blue accent */
+  --steam-text: #c7d5e0;      /* main text */
+  --steam-muted: #adadad;     /* secondary text */
+}
+
+body {
+  margin: 0;
+  background: var(--steam-bg);
+  color: var(--steam-text);
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background: var(--steam-header);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.header h1 {
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.panel {
+  background: var(--steam-panel);
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+fieldset {
+  border: 1px solid var(--steam-blue);
+  border-radius: 4px;
+}
+
+legend {
+  color: var(--steam-blue);
+  padding: 0 8px;
+}
+
+input[type="text"] {
+  background: #316282;
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #fff;
+  padding: 8px;
+  margin: 6px 0 12px;
+  width: 90%;
+}
+
+input[type="text"]::placeholder {
+  color: var(--steam-muted);
+}
+
+button {
+  background: linear-gradient(to right, #47bfff, #1a44c2);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: linear-gradient(to right, #66c0f4, #2a5bd7);
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.tutorial-gif {
+  max-width: 100%;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px 0;
+  border-bottom: 1px solid #1b2838;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sort-controls {
+  margin-bottom: 12px;
+}
+
+select {
+  background: #316282;
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #fff;
+  padding: 6px;
+  margin-right: 8px;
+}
+
+.game-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+}
+
+.game-name {
+  flex: 1;
+}
+
+.game-time {
+  color: var(--steam-muted);
+  font-size: 0.9rem;
+}
